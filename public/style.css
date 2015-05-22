@@ -1,0 +1,85 @@
+* {
+}
+
+body {
+	height:					100%;
+	margin:					0;
+	padding:				0;
+	-webkit-font-smoothing:	antialiased;
+	font-family:			Consolas;
+}
+
+.header {
+	width:					20%;
+	height:					60px;
+	font-size:				200%;
+	background-color:		#feb;
+	color:					#999;
+}
+
+.maskpage {
+	background-color:	#abc;
+}
+
+.prompt {
+	font-size:		200%;
+	text-align:		center;
+}
+
+.idinput {
+	border:			10px solid #abc;
+	height:			60px;
+	position:		relative;
+	left:			700px;
+	text-align:		center;
+}
+
+.realpage {
+	display:	none;
+}
+
+.sys_cuebar {
+	color:			#aaa;
+}
+
+.logarea {
+	border:			10px solid #abc;
+	height:			300px;
+	width:			40%;
+	padding-bottom:	60px;
+	left:			300px;
+	position:		absolute;
+/*	overflow:		auto;	*/
+}
+
+/*	在logtips元素里面增加内容
+	就应该在对logtips进行append
+	就应该在logtips的css属性里面增加overflow-y属性
+	就应该对$('.logtips')进行scrollTop=scrollHeight操作
+*/
+
+.logtips {
+	height:			100%;
+	color:			#f00;
+	overflow-y:		scroll;
+}
+
+.usr_cuebar {
+	color:			#bbb;
+}
+
+.ginput {
+	border:			10px solid #abc;
+	bottom:			0;
+	left:			0;
+	right:			0;
+	height:			60px;
+	outline:		none;
+	position:		absolute;
+	width:			95%;
+}
+
+.local {
+	text-align:			right;
+	background-color:	
+}
