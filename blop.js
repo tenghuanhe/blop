@@ -11,7 +11,7 @@ var sys_id_waiting = null;
 
 app.use(express.static(__dirname + '/public'));
 
-server.listen(port, function() {
+server.listen(port, function () {
 	console.log('Server listening at port %d', port);
 });
 
