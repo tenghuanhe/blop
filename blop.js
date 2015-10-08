@@ -21,6 +21,11 @@ io.on('connection', function (socket_server) {
 	var cin = false;
 	
 	var currusr = {};
+	
+	socket_server.broadcast.emit('user online', uidcnt + 1);
+	
+	console.log('users online ', uidcnt);
+	
 	socket_server.on('addin', function (uid) {
 		currusr.uid =		uid;
 		currusr.servsock =	socket_server;
@@ -93,5 +98,7 @@ io.on('connection', function (socket_server) {
 		console.log(currusr.uid + ' leaves');
 		delete gid[currusr.sys_id];
 		uidcnt = uidcnt - 1;
+		console.log('users online ', uidcnt);
+		socket_server.broadcast.emit('user online', uidcnt);
 	});
 });

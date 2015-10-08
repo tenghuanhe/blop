@@ -17,6 +17,9 @@ body {
 	color:					#999;
 }
 
+.counter {
+	text-align:		right;
+}
 .maskpage {
 	background-color:	#abc;
 }

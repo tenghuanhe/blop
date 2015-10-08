@@ -1,7 +1,8 @@
 $(function () {
 	
 	var $window =		$(window);
-	var $header =		$('.header');	
+	var $header =		$('.header');
+	var $counter = 		$('.counter');
 	var $idinput =		$('.idinput');
 	var $maskpage =		$('.maskpage');
 	var $realpage =		$('.realpage');
@@ -59,6 +60,10 @@ $(function () {
 		}
 	});
 
+	
+	socket_client.on('user online', function (data) {
+		$counter.html('<p>Current ' + data + ' users online </p>');
+	});
 	
 	socket_client.on('login', function (data) {
 		var welinfo = 'Welcome to blop, usr fr IP ' + data;
