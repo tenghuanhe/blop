@@ -1,4 +1,4 @@
-#blop
+# blop
 
 blop is a p2p web application similiar to [Omegle](http://www.omegle.com/) written in Node.js.
 
